@@ -1,0 +1,1 @@
+insert into exchange_value(id,country_code,conversion_factor) values(10001,'ZEN',73.80);

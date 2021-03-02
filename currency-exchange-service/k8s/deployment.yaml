@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-exchange-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: currency-exchange-service
+  template:
+    metadata:
+      labels:
+        app: currency-exchange-service
+    spec:
+      containers:
+      - name: currency-exchange-service
+        image: tusharghadge/currency-exchange-service:1.0.0
+        env:
+          - name: SPRING_CLOUD_CONFIG_URI
+            value: http://config-server.default.svc.cluster.local:8888
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
