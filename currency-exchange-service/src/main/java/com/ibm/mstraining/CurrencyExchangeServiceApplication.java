@@ -1,4 +1,4 @@
-package com.ibm.mstraining;
+package com.ibm.mstraining; 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
