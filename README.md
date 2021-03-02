@@ -6,6 +6,7 @@
   * Feign client - is usd to communicate with other microservice to achieve dynamic calling and load balancing.
   * resilience4j - is used to implement circuit breaker pattern
   * zipkin distributed tracing - is implemented using sleuth ,rabbitmq and zipkin client
+  * Applications are deployed on IBM kuberntes cluster.
 
 ----
 ## URL's
@@ -35,3 +36,11 @@ Images are created and pused to docker hub registry
 | Eureka Naming Server              | docker pull tusharghadge/eurka-naming-service:1.0.0          | 
 | Currency Exchange Service         | docker pull tusharghadge/currency-exchange-service:1.0.0     | 
 | Currency Conversion Service       | docker pull tusharghadge/currency-conversion-service:1.0.0   |
+
+## Public URl's for app deployed on IBM cluster
+
+| Application                       | URL                                                          |
+| ----------------------------------|:------------------------------------------------------------:| 
+| Config Server                     | http://159.122.187.113:32643/                                | 
+| Eureka Naming Server              | http://159.122.187.113:32131/                                | 
+
