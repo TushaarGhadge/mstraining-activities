@@ -26,3 +26,12 @@
 | Currency Exchange Service         | 8000          | 
 | Currency Conversion Service       | 8100          |   
 | Zipkin Distributed Tracing Server | 9411          | 
+
+## Docker pull commands
+Images are created and pused to docker hub registry
+
+| Application                       | Pull ommand                                                  |
+| ----------------------------------|:------------------------------------------------------------:| 
+| Eureka Naming Server              | docker pull tusharghadge/eurka-naming-service:1.0.0          | 
+| Currency Exchange Service         | docker pull tusharghadge/currency-exchange-service:1.0.0     | 
+| Currency Conversion Service       | docker pull tusharghadge/currency-conversion-service:1.0.0   |
